@@ -3,17 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ED3754932C8EE32100CC22D6 /* xcode_and_playgroundsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3754922C8EE32100CC22D6 /* xcode_and_playgroundsApp.swift */; };
-		ED3754952C8EE32100CC22D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3754942C8EE32100CC22D6 /* ContentView.swift */; };
 		ED3754972C8EE32200CC22D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED3754962C8EE32200CC22D6 /* Assets.xcassets */; };
 		ED37549A2C8EE32200CC22D6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED3754992C8EE32200CC22D6 /* Preview Assets.xcassets */; };
 		ED3754A42C8EE32200CC22D6 /* xcode_and_playgroundsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3754A32C8EE32200CC22D6 /* xcode_and_playgroundsTests.swift */; };
 		ED3754AE2C8EE32200CC22D6 /* xcode_and_playgroundsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3754AD2C8EE32200CC22D6 /* xcode_and_playgroundsUITests.swift */; };
 		ED3754B02C8EE32200CC22D6 /* xcode_and_playgroundsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3754AF2C8EE32200CC22D6 /* xcode_and_playgroundsUITestsLaunchTests.swift */; };
+		ED3754BE2C8EE47500CC22D6 /* Main in Frameworks */ = {isa = PBXBuildFile; productRef = ED3754BD2C8EE47500CC22D6 /* Main */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +34,6 @@
 
 /* Begin PBXFileReference section */
 		ED37548F2C8EE32100CC22D6 /* xcode-and-playgrounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "xcode-and-playgrounds.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED3754922C8EE32100CC22D6 /* xcode_and_playgroundsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xcode_and_playgroundsApp.swift; sourceTree = "<group>"; };
-		ED3754942C8EE32100CC22D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ED3754962C8EE32200CC22D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED3754992C8EE32200CC22D6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ED37549F2C8EE32200CC22D6 /* xcode-and-playgroundsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "xcode-and-playgroundsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED3754BE2C8EE47500CC22D6 /* Main in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,8 +92,6 @@
 		ED3754912C8EE32100CC22D6 /* xcode-and-playgrounds */ = {
 			isa = PBXGroup;
 			children = (
-				ED3754922C8EE32100CC22D6 /* xcode_and_playgroundsApp.swift */,
-				ED3754942C8EE32100CC22D6 /* ContentView.swift */,
 				ED3754962C8EE32200CC22D6 /* Assets.xcassets */,
 				ED3754982C8EE32200CC22D6 /* Preview Content */,
 			);
@@ -143,6 +139,9 @@
 			dependencies = (
 			);
 			name = "xcode-and-playgrounds";
+			packageProductDependencies = (
+				ED3754BD2C8EE47500CC22D6 /* Main */,
+			);
 			productName = "xcode-and-playgrounds";
 			productReference = ED37548F2C8EE32100CC22D6 /* xcode-and-playgrounds.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +214,9 @@
 				Base,
 			);
 			mainGroup = ED3754862C8EE32100CC22D6;
+			packageReferences = (
+				ED3754BC2C8EE47500CC22D6 /* XCLocalSwiftPackageReference "main" */,
+			);
 			productRefGroup = ED3754902C8EE32100CC22D6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +259,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED3754952C8EE32100CC22D6 /* ContentView.swift in Sources */,
-				ED3754932C8EE32100CC22D6 /* xcode_and_playgroundsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,7 +475,6 @@
 		ED3754B72C8EE32200CC22D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -495,7 +494,6 @@
 		ED3754B82C8EE32200CC22D6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -515,7 +513,6 @@
 		ED3754BA2C8EE32200CC22D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HSPXR438P9;
@@ -533,7 +530,6 @@
 		ED3754BB2C8EE32200CC22D6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HSPXR438P9;
@@ -588,6 +584,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		ED3754BC2C8EE47500CC22D6 /* XCLocalSwiftPackageReference "main" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = main;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ED3754BD2C8EE47500CC22D6 /* Main */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Main;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ED3754872C8EE32100CC22D6 /* Project object */;
 }
