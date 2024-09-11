@@ -8,3 +8,8 @@ struct MyApp: App {
         }
     }
 }
+
+
+func testableFunction() -> String {
+    return "OK"
+}

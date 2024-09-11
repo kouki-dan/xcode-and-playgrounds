@@ -11,9 +11,6 @@
 		ED22FD2E2C91D7B6003F2B1C /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = ED22FD2D2C91D7B6003F2B1C /* Localizable.xcstrings */; };
 		ED22FD302C91D819003F2B1C /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = ED22FD2F2C91D819003F2B1C /* InfoPlist.xcstrings */; };
 		ED37549A2C8EE32200CC22D6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED3754992C8EE32200CC22D6 /* Preview Assets.xcassets */; };
-		ED3754A42C8EE32200CC22D6 /* xcode_and_playgroundsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3754A32C8EE32200CC22D6 /* xcode_and_playgroundsTests.swift */; };
-		ED3754AE2C8EE32200CC22D6 /* xcode_and_playgroundsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3754AD2C8EE32200CC22D6 /* xcode_and_playgroundsUITests.swift */; };
-		ED3754B02C8EE32200CC22D6 /* xcode_and_playgroundsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3754AF2C8EE32200CC22D6 /* xcode_and_playgroundsUITestsLaunchTests.swift */; };
 		ED6CA75C2C91E1C400EC0B3F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = ED6CA75B2C91E1C400EC0B3F /* README.md */; };
 /* End PBXBuildFile section */
 
@@ -41,15 +38,14 @@
 		ED37548F2C8EE32100CC22D6 /* xcode-and-playgrounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "xcode-and-playgrounds.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED3754992C8EE32200CC22D6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ED37549F2C8EE32200CC22D6 /* xcode-and-playgroundsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "xcode-and-playgroundsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED3754A32C8EE32200CC22D6 /* xcode_and_playgroundsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xcode_and_playgroundsTests.swift; sourceTree = "<group>"; };
 		ED3754A92C8EE32200CC22D6 /* xcode-and-playgroundsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "xcode-and-playgroundsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED3754AD2C8EE32200CC22D6 /* xcode_and_playgroundsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xcode_and_playgroundsUITests.swift; sourceTree = "<group>"; };
-		ED3754AF2C8EE32200CC22D6 /* xcode_and_playgroundsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xcode_and_playgroundsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		ED6CA75B2C91E1C400EC0B3F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		ED22FD242C91CE0B003F2B1C /* XcodeAndPlaygrounds */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); name = XcodeAndPlaygrounds; path = XcodeAndPlaygrounds.swiftpm/XcodeAndPlaygrounds; sourceTree = "<group>"; };
+		ED6CA7622C91E84300EC0B3F /* xcode-and-playgroundsTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "xcode-and-playgroundsTests"; sourceTree = "<group>"; };
+		ED6CA79C2C91E92F00EC0B3F /* xcode-and-playgroundsUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "xcode-and-playgroundsUITests"; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +79,8 @@
 				ED6CA75B2C91E1C400EC0B3F /* README.md */,
 				ED22FD242C91CE0B003F2B1C /* XcodeAndPlaygrounds */,
 				ED3754912C8EE32100CC22D6 /* xcode-and-playgrounds */,
-				ED3754A22C8EE32200CC22D6 /* xcode-and-playgroundsTests */,
-				ED3754AC2C8EE32200CC22D6 /* xcode-and-playgroundsUITests */,
+				ED6CA7622C91E84300EC0B3F /* xcode-and-playgroundsTests */,
+				ED6CA79C2C91E92F00EC0B3F /* xcode-and-playgroundsUITests */,
 				ED3754902C8EE32100CC22D6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -116,23 +112,6 @@
 				ED3754992C8EE32200CC22D6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		ED3754A22C8EE32200CC22D6 /* xcode-and-playgroundsTests */ = {
-			isa = PBXGroup;
-			children = (
-				ED3754A32C8EE32200CC22D6 /* xcode_and_playgroundsTests.swift */,
-			);
-			path = "xcode-and-playgroundsTests";
-			sourceTree = "<group>";
-		};
-		ED3754AC2C8EE32200CC22D6 /* xcode-and-playgroundsUITests */ = {
-			isa = PBXGroup;
-			children = (
-				ED3754AD2C8EE32200CC22D6 /* xcode_and_playgroundsUITests.swift */,
-				ED3754AF2C8EE32200CC22D6 /* xcode_and_playgroundsUITestsLaunchTests.swift */,
-			);
-			path = "xcode-and-playgroundsUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +152,9 @@
 			dependencies = (
 				ED3754A12C8EE32200CC22D6 /* PBXTargetDependency */,
 			);
+			fileSystemSynchronizedGroups = (
+				ED6CA7622C91E84300EC0B3F /* xcode-and-playgroundsTests */,
+			);
 			name = "xcode-and-playgroundsTests";
 			productName = "xcode-and-playgroundsTests";
 			productReference = ED37549F2C8EE32200CC22D6 /* xcode-and-playgroundsTests.xctest */;
@@ -190,6 +172,9 @@
 			);
 			dependencies = (
 				ED3754AB2C8EE32200CC22D6 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				ED6CA79C2C91E92F00EC0B3F /* xcode-and-playgroundsUITests */,
 			);
 			name = "xcode-and-playgroundsUITests";
 			productName = "xcode-and-playgroundsUITests";
@@ -283,7 +268,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED3754A42C8EE32200CC22D6 /* xcode_and_playgroundsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,8 +275,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED3754AE2C8EE32200CC22D6 /* xcode_and_playgroundsUITests.swift in Sources */,
-				ED3754B02C8EE32200CC22D6 /* xcode_and_playgroundsUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
