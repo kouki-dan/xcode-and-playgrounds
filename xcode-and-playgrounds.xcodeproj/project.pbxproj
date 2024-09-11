@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ED3754972C8EE32200CC22D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED3754962C8EE32200CC22D6 /* Assets.xcassets */; };
+		ED22FD2C2C91D5DC003F2B1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED22FD2B2C91D5DC003F2B1C /* Assets.xcassets */; };
 		ED37549A2C8EE32200CC22D6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED3754992C8EE32200CC22D6 /* Preview Assets.xcassets */; };
 		ED3754A42C8EE32200CC22D6 /* xcode_and_playgroundsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3754A32C8EE32200CC22D6 /* xcode_and_playgroundsTests.swift */; };
 		ED3754AE2C8EE32200CC22D6 /* xcode_and_playgroundsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3754AD2C8EE32200CC22D6 /* xcode_and_playgroundsUITests.swift */; };
@@ -32,8 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ED22FD2B2C91D5DC003F2B1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = XcodeAndPlaygrounds.swiftpm/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		ED37548F2C8EE32100CC22D6 /* xcode-and-playgrounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "xcode-and-playgrounds.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED3754962C8EE32200CC22D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED3754992C8EE32200CC22D6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ED37549F2C8EE32200CC22D6 /* xcode-and-playgroundsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "xcode-and-playgroundsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED3754A32C8EE32200CC22D6 /* xcode_and_playgroundsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xcode_and_playgroundsTests.swift; sourceTree = "<group>"; };
@@ -95,8 +95,8 @@
 		ED3754912C8EE32100CC22D6 /* xcode-and-playgrounds */ = {
 			isa = PBXGroup;
 			children = (
-				ED3754962C8EE32200CC22D6 /* Assets.xcassets */,
 				ED3754982C8EE32200CC22D6 /* Preview Content */,
+				ED22FD2B2C91D5DC003F2B1C /* Assets.xcassets */,
 			);
 			path = "xcode-and-playgrounds";
 			sourceTree = "<group>";
@@ -237,8 +237,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED22FD2C2C91D5DC003F2B1C /* Assets.xcassets in Resources */,
 				ED37549A2C8EE32200CC22D6 /* Preview Assets.xcassets in Resources */,
-				ED3754972C8EE32200CC22D6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
