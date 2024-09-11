@@ -29,6 +29,9 @@ let package = Package(
                 .landscapeRight,
                 .landscapeLeft,
                 .portraitUpsideDown(.when(deviceFamilies: [.pad]))
+            ],
+            capabilities: [
+                .photoLibrary(purposeString: "The reason why use this permission")
             ]
         )
     ],
