@@ -8,10 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		ED22FD2C2C91D5DC003F2B1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED22FD2B2C91D5DC003F2B1C /* Assets.xcassets */; };
+		ED22FD2E2C91D7B6003F2B1C /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = ED22FD2D2C91D7B6003F2B1C /* Localizable.xcstrings */; };
+		ED22FD302C91D819003F2B1C /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = ED22FD2F2C91D819003F2B1C /* InfoPlist.xcstrings */; };
 		ED37549A2C8EE32200CC22D6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED3754992C8EE32200CC22D6 /* Preview Assets.xcassets */; };
 		ED3754A42C8EE32200CC22D6 /* xcode_and_playgroundsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3754A32C8EE32200CC22D6 /* xcode_and_playgroundsTests.swift */; };
 		ED3754AE2C8EE32200CC22D6 /* xcode_and_playgroundsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3754AD2C8EE32200CC22D6 /* xcode_and_playgroundsUITests.swift */; };
 		ED3754B02C8EE32200CC22D6 /* xcode_and_playgroundsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3754AF2C8EE32200CC22D6 /* xcode_and_playgroundsUITestsLaunchTests.swift */; };
+		ED6CA75C2C91E1C400EC0B3F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = ED6CA75B2C91E1C400EC0B3F /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +36,8 @@
 
 /* Begin PBXFileReference section */
 		ED22FD2B2C91D5DC003F2B1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = XcodeAndPlaygrounds.swiftpm/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		ED22FD2D2C91D7B6003F2B1C /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		ED22FD2F2C91D819003F2B1C /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
 		ED37548F2C8EE32100CC22D6 /* xcode-and-playgrounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "xcode-and-playgrounds.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED3754992C8EE32200CC22D6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ED37549F2C8EE32200CC22D6 /* xcode-and-playgroundsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "xcode-and-playgroundsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +45,7 @@
 		ED3754A92C8EE32200CC22D6 /* xcode-and-playgroundsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "xcode-and-playgroundsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED3754AD2C8EE32200CC22D6 /* xcode_and_playgroundsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xcode_and_playgroundsUITests.swift; sourceTree = "<group>"; };
 		ED3754AF2C8EE32200CC22D6 /* xcode_and_playgroundsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xcode_and_playgroundsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ED6CA75B2C91E1C400EC0B3F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -74,6 +80,7 @@
 		ED3754862C8EE32100CC22D6 = {
 			isa = PBXGroup;
 			children = (
+				ED6CA75B2C91E1C400EC0B3F /* README.md */,
 				ED22FD242C91CE0B003F2B1C /* XcodeAndPlaygrounds */,
 				ED3754912C8EE32100CC22D6 /* xcode-and-playgrounds */,
 				ED3754A22C8EE32200CC22D6 /* xcode-and-playgroundsTests */,
@@ -97,6 +104,8 @@
 			children = (
 				ED3754982C8EE32200CC22D6 /* Preview Content */,
 				ED22FD2B2C91D5DC003F2B1C /* Assets.xcassets */,
+				ED22FD2D2C91D7B6003F2B1C /* Localizable.xcstrings */,
+				ED22FD2F2C91D819003F2B1C /* InfoPlist.xcstrings */,
 			);
 			path = "xcode-and-playgrounds";
 			sourceTree = "<group>";
@@ -217,6 +226,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = ED3754862C8EE32100CC22D6;
 			packageReferences = (
@@ -239,6 +249,9 @@
 			files = (
 				ED22FD2C2C91D5DC003F2B1C /* Assets.xcassets in Resources */,
 				ED37549A2C8EE32200CC22D6 /* Preview Assets.xcassets in Resources */,
+				ED6CA75C2C91E1C400EC0B3F /* README.md in Resources */,
+				ED22FD302C91D819003F2B1C /* InfoPlist.xcstrings in Resources */,
+				ED22FD2E2C91D7B6003F2B1C /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +372,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -416,6 +430,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
