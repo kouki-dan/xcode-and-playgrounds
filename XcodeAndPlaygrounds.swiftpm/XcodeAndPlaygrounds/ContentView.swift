@@ -2,6 +2,9 @@ import SwiftUI
 import Photos
 
 struct ContentView: View {
+    @State
+    var showStatusBarSimuiaton = false
+
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -14,6 +17,12 @@ struct ContentView: View {
                     await PHPhotoLibrary.requestAuthorization(for: .readWrite)
                 }
             }
+            Button("Show status bar simulation") {
+                showStatusBarSimuiaton.toggle()
+            }
+        }
+        .fullScreenCover(isPresented: $showStatusBarSimuiaton) {
+            StatusBarSimulationPage()
         }
     }
 }
