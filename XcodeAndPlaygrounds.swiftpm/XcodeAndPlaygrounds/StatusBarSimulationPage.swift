@@ -27,14 +27,22 @@ struct StatusBarSimulationPage: View {
     }
 }
 
-let formatter = {
-    let f = DateFormatter()
-    f.dateStyle = .medium
-    f.timeStyle = .none
-    return f
-}()
+var formatters: [Locale: DateFormatter] = [:]
+func formatter(for locale: Locale) -> DateFormatter  {
+    if let formatter = formatters[locale] {
+        return formatter
+    } else {
+        let formatter = DateFormatter()
+        formatter.locale = locale
+        formatter.setLocalizedDateFormatFromTemplate("EEE MMM dd")
+        formatters[locale] = formatter
+        return formatter
+    }
+}
 
 struct StatusBarSimulation: View {
+    @Environment(\.locale)
+    var locale
 
     enum Spec {
         case iPhone
@@ -72,13 +80,8 @@ struct StatusBarSimulation: View {
         case .iPad:
             // Hard coding appearance of iPad Pro 13 inch
             HStack {
-                let date = Date()
-                    .formatted(
-                        Date.FormatStyle()
-                            .month()
-                            .day()
-                            .weekday()
-                    )
+                let date = formatter(for: locale)
+                    .string(from: Date())
                     // In English, formatted text is like `Tue, Nov 26`, but the status's text is `Tue Nov 26(, ommitted)`.
                     // I didn't understand specifying this format. Workaround with string replacement to replicate this behavior.
                     // It is only tested in Japanese and English.
@@ -117,5 +120,7 @@ struct StatusBarSimulation: View {
 #Preview {
     StatusBarSimulationPage()
     StatusBarSimulation(spec: .iPad)
+    StatusBarSimulation(spec: .iPad)
+        .environment(\.locale, .init(identifier: "ja_JP"))
 }
 
