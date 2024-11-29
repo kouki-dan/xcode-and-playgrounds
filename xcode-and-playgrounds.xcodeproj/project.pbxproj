@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED108D262CB8BA9E00FB0B86 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = ED108D252CB8BA9E00FB0B86 /* SnapshotTesting */; };
 		ED22FD2C2C91D5DC003F2B1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED22FD2B2C91D5DC003F2B1C /* Assets.xcassets */; };
 		ED22FD2E2C91D7B6003F2B1C /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = ED22FD2D2C91D7B6003F2B1C /* Localizable.xcstrings */; };
 		ED22FD302C91D819003F2B1C /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = ED22FD2F2C91D819003F2B1C /* InfoPlist.xcstrings */; };
@@ -60,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED108D262CB8BA9E00FB0B86 /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +217,7 @@
 			);
 			mainGroup = ED3754862C8EE32100CC22D6;
 			packageReferences = (
+				ED108D242CB8BA9E00FB0B86 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
 			);
 			productRefGroup = ED3754902C8EE32100CC22D6 /* Products */;
 			projectDirPath = "";
@@ -587,6 +590,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ED108D242CB8BA9E00FB0B86 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.17.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ED108D252CB8BA9E00FB0B86 /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED108D242CB8BA9E00FB0B86 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ED3754872C8EE32100CC22D6 /* Project object */;
 }

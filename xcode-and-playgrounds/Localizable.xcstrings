@@ -1,6 +1,15 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "9:41" : {
+
+    },
+    "100%" : {
+
+    },
+    "Dismiss" : {
+
+    },
     "from Playgrounds :)" : {
       "localizations" : {
         "ja" : {
@@ -30,6 +39,9 @@
           }
         }
       }
+    },
+    "Show status bar simulation" : {
+
     }
   },
   "version" : "1.0"
